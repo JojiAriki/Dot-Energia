@@ -1,0 +1,96 @@
+// Logos dos clientes
+const clientLogos = [
+  { id: 1, src: '/images/clienteLogo/4.png', alt: 'Cliente 4' },
+  { id: 2, src: '/images/clienteLogo/6.png', alt: 'Cliente 6' },
+  { id: 3, src: '/images/clienteLogo/7.png', alt: 'Cliente 7' },
+  { id: 4, src: '/images/clienteLogo/9.png', alt: 'Cliente 9' },
+  { id: 5, src: '/images/clienteLogo/10.png', alt: 'Cliente 10' },
+  { id: 6, src: '/images/clienteLogo/12.png', alt: 'Cliente 12' },
+  { id: 7, src: '/images/clienteLogo/13.png', alt: 'Cliente 13' },
+  { id: 8, src: '/images/clienteLogo/14.png', alt: 'Cliente 14' },
+  { id: 9, src: '/images/clienteLogo/15.png', alt: 'Cliente 15' },
+  { id: 10, src: '/images/clienteLogo/17.png', alt: 'Cliente 17' },
+  { id: 11, src: '/images/clienteLogo/20.png', alt: 'Cliente 20' },
+  { id: 12, src: '/images/clienteLogo/23.png', alt: 'Cliente 23' },
+  { id: 13, src: '/images/clienteLogo/28.png', alt: 'Cliente 28' },
+];
+
+// Dividir logos em duas linhas
+const firstRowLogos = clientLogos.slice(0, 7);
+const secondRowLogos = clientLogos.slice(7);
+
+export function TestimonialsSection() {
+  return (
+    <section
+      id="testimonials"
+      className="relative py-24 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 overflow-hidden"
+    >
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-primary-300 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10">
+        {/* Header */}
+        <div className="text-center mb-16 px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
+            Empresas que{' '}
+            <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
+              confiam
+            </span>{' '}
+            na DOT Energia
+          </h2>
+          <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+            Mais de 500 empresas já economizam até 30% nos custos de energia com
+            nossa solução sustentável
+          </p>
+        </div>
+
+        {/* First Row - Moving Right */}
+        <div className="mb-8 overflow-hidden">
+          <div className="flex animate-scroll-right whitespace-nowrap">
+            {/* Duplicamos os logos para animação contínua */}
+            {[...firstRowLogos, ...firstRowLogos, ...firstRowLogos].map(
+              (logo, index) => (
+                <div key={`row1-${index}`} className="flex-shrink-0 mx-5">
+                  <div className="flex items-center justify-center h-24 px-6">
+                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-primary-100/50 hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+
+        {/* Second Row - Moving Left */}
+        <div className="mb-16 overflow-hidden">
+          <div className="flex animate-scroll-left whitespace-nowrap">
+            {/* Duplicamos os logos para animação contínua */}
+            {[...secondRowLogos, ...secondRowLogos, ...secondRowLogos].map(
+              (logo, index) => (
+                <div key={`row2-${index}`} className="flex-shrink-0 mx-5">
+                  <div className="flex items-center justify-center h-24 px-6">
+                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-primary-100/50 hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
