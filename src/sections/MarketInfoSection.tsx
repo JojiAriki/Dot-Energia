@@ -1,4 +1,8 @@
+import { useBasePath } from '@/hooks/useBasePath';
+
 export function MarketInfoSection() {
+  const { getImagePath } = useBasePath();
+
   return (
     <section className="relative py-24 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 overflow-hidden">
       {/* Background Elements */}
@@ -151,56 +155,15 @@ export function MarketInfoSection() {
             </div>
           </div>
 
-          {/* Image Area - Right Side */}
-          <div className="relative lg:col-span-1">
-            {/* Placeholder for image - Organic Shape */}
-            <div
-              className="relative h-[600px] overflow-hidden bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center"
-              style={{
-                borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-                clipPath: 'ellipse(85% 90% at 50% 50%)',
-              }}
-            >
-              {/* Background pattern */}
-              <div className="absolute inset-0 opacity-15">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage: `radial-gradient(circle at 25% 25%, #00C11B 3px, transparent 3px),
-                                     radial-gradient(circle at 75% 75%, #00C11B 2px, transparent 2px)`,
-                    backgroundSize: '100px 100px',
-                  }}
-                ></div>
-              </div>
-
-              {/* Content overlay for image */}
-              <div className="relative z-10 text-center p-8">
-                <div
-                  className="w-40 h-40 mx-auto mb-8 bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-2xl"
-                  style={{
-                    borderRadius: '50% 40% 60% 30% / 40% 50% 30% 60%',
-                  }}
-                >
-                  <div className="text-6xl">⚡</div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="text-primary-700 font-medium text-xl">
-                    Área preparada para
-                  </div>
-                  <div className="text-primary-800 font-bold text-2xl">
-                    imagem do mercado
-                  </div>
-                  <div className="text-primary-600 text-sm opacity-80">
-                    Formato orgânico e moderno
-                  </div>
-                </div>
-              </div>
+          {/* Image Area - Right Side: replace placeholder with homem.png */}
+          <div className="relative lg:col-span-1 flex items-center justify-center">
+            <div className="w-full max-w-[600px] p-4">
+              <img
+                src={getImagePath('images/homem.png')}
+                alt="Homem"
+                className="w-full h-auto rounded-lg object-cover"
+              />
             </div>
-
-            {/* Minimal decorative elements */}
-            <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary-400/60 rounded-full"></div>
-            <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-primary-300/60 rounded-full"></div>
           </div>
         </div>
       </div>
