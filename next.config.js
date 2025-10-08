@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/Dot-Energia' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Dot-Energia' : '',
   images: {
-    domains: ['localhost'],
+    unoptimized: true,
   },
 };
 

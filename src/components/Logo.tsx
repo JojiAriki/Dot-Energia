@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useBasePath } from '@/hooks/useBasePath';
 
 interface LogoProps {
   className?: string;
@@ -15,10 +16,12 @@ export function Logo({
   height = 40,
   variant = 'light',
 }: LogoProps) {
+  const { getImagePath } = useBasePath();
+
   const logoSrc =
     variant === 'dark'
-      ? '/images/logos/dot-energia-logo-white.svg'
-      : '/images/logos/dot-energia-logo.svg';
+      ? getImagePath('images/logos/dot-energia-logo-white.svg')
+      : getImagePath('images/logos/dot-energia-logo.svg');
 
   return (
     <div className={`flex items-center ${className}`}>

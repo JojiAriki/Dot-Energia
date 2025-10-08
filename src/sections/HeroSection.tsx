@@ -1,11 +1,17 @@
+'use client';
+
+import { useBasePath } from '@/hooks/useBasePath';
+
 export function HeroSection() {
+  const { getImagePath } = useBasePath();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/hero/hero.jpg')",
+          backgroundImage: `url('${getImagePath('images/hero/hero.jpg')}')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/70 via-secondary-800/60 to-primary-900/50"></div>

@@ -1,25 +1,66 @@
-// Logos dos clientes
-const clientLogos = [
-  { id: 1, src: '/images/clienteLogo/4.png', alt: 'Cliente 4' },
-  { id: 2, src: '/images/clienteLogo/6.png', alt: 'Cliente 6' },
-  { id: 3, src: '/images/clienteLogo/7.png', alt: 'Cliente 7' },
-  { id: 4, src: '/images/clienteLogo/9.png', alt: 'Cliente 9' },
-  { id: 5, src: '/images/clienteLogo/10.png', alt: 'Cliente 10' },
-  { id: 6, src: '/images/clienteLogo/12.png', alt: 'Cliente 12' },
-  { id: 7, src: '/images/clienteLogo/13.png', alt: 'Cliente 13' },
-  { id: 8, src: '/images/clienteLogo/14.png', alt: 'Cliente 14' },
-  { id: 9, src: '/images/clienteLogo/15.png', alt: 'Cliente 15' },
-  { id: 10, src: '/images/clienteLogo/17.png', alt: 'Cliente 17' },
-  { id: 11, src: '/images/clienteLogo/20.png', alt: 'Cliente 20' },
-  { id: 12, src: '/images/clienteLogo/23.png', alt: 'Cliente 23' },
-  { id: 13, src: '/images/clienteLogo/28.png', alt: 'Cliente 28' },
-];
+'use client';
 
-// Dividir logos em duas linhas
-const firstRowLogos = clientLogos.slice(0, 7);
-const secondRowLogos = clientLogos.slice(7);
+import { useBasePath } from '@/hooks/useBasePath';
 
 export function TestimonialsSection() {
+  const { getImagePath } = useBasePath();
+
+  // Logos dos clientes
+  const clientLogos = [
+    { id: 1, src: getImagePath('images/clienteLogo/4.png'), alt: 'Cliente 4' },
+    { id: 2, src: getImagePath('images/clienteLogo/6.png'), alt: 'Cliente 6' },
+    { id: 3, src: getImagePath('images/clienteLogo/7.png'), alt: 'Cliente 7' },
+    { id: 4, src: getImagePath('images/clienteLogo/9.png'), alt: 'Cliente 9' },
+    {
+      id: 5,
+      src: getImagePath('images/clienteLogo/10.png'),
+      alt: 'Cliente 10',
+    },
+    {
+      id: 6,
+      src: getImagePath('images/clienteLogo/12.png'),
+      alt: 'Cliente 12',
+    },
+    {
+      id: 7,
+      src: getImagePath('images/clienteLogo/13.png'),
+      alt: 'Cliente 13',
+    },
+    {
+      id: 8,
+      src: getImagePath('images/clienteLogo/14.png'),
+      alt: 'Cliente 14',
+    },
+    {
+      id: 9,
+      src: getImagePath('images/clienteLogo/15.png'),
+      alt: 'Cliente 15',
+    },
+    {
+      id: 10,
+      src: getImagePath('images/clienteLogo/17.png'),
+      alt: 'Cliente 17',
+    },
+    {
+      id: 11,
+      src: getImagePath('images/clienteLogo/20.png'),
+      alt: 'Cliente 20',
+    },
+    {
+      id: 12,
+      src: getImagePath('images/clienteLogo/23.png'),
+      alt: 'Cliente 23',
+    },
+    {
+      id: 13,
+      src: getImagePath('images/clienteLogo/28.png'),
+      alt: 'Cliente 28',
+    },
+  ];
+
+  // Dividir logos em duas linhas
+  const firstRowLogos = clientLogos.slice(0, 7);
+  const secondRowLogos = clientLogos.slice(7);
   return (
     <section
       id="testimonials"
