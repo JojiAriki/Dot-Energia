@@ -416,3 +416,13 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Next.js specific
+/.next/
+/out/
+/.env*.local
+next-env.d.ts
+*.tsbuildinfo
+
+# Vercel
+.vercel
