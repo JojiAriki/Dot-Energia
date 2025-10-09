@@ -3,7 +3,6 @@ import { HeroSection } from '@/sections/HeroSection';
 import { MarketInfoSection } from '@/sections/MarketInfoSection';
 import { BenefitsSection } from '@/sections/BenefitsSection';
 import { TestimonialsSection } from '@/sections/TestimonialsSection';
-import { ProcessSection } from '@/sections/ProcessSection';
 import { SustainabilitySection } from '@/sections/SustainabilitySection';
 import { WhyChooseSection } from '@/sections/WhyChooseSection';
 import { ContactFormSection } from '@/sections/ContactFormSection';
@@ -19,7 +18,6 @@ export default function HomePage() {
         <BenefitsSection />
         <SustainabilitySection />
         <TestimonialsSection />
-        <ProcessSection />
         <WhyChooseSection />
         <ContactFormSection />
         <Footer />

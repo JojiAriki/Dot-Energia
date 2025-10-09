@@ -9,8 +9,31 @@ import {
 export function MarketInfoSection() {
   const { getImagePath } = useBasePath();
 
+  const steps = [
+    {
+      number: '01',
+      title: 'Análise Inicial',
+      description: 'Avaliamos seu consumo atual e identificamos oportunidades',
+    },
+    {
+      number: '02',
+      title: 'Proposta Customizada',
+      description: 'Desenvolvemos uma estratégia específica para seu negócio',
+    },
+    {
+      number: '03',
+      title: 'Processo Simplificado',
+      description: 'Gerenciamos toda a migração sem complicações',
+    },
+    {
+      number: '04',
+      title: 'Resultados Garantidos',
+      description: 'Economia imediata e sustentabilidade energética',
+    },
+  ];
+
   return (
-    <section className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-whiteoverflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary-500 rounded-full blur-3xl"></div>
@@ -128,6 +151,41 @@ export function MarketInfoSection() {
                 className="relative w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Process Section */}
+        <div className="mt-24 pt-16 border-t border-neutral-700/30">
+          <div className="text-center mb-12">
+            <h3 className="text-xl md:text-2xl font-medium text-neutral-200 mb-4">
+              Como chegamos até você
+            </h3>
+            <p className="text-base text-neutral-400 max-w-2xl mx-auto">
+              Um processo direto e sem complicações para sua migração energética
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {steps.map((step, index) => (
+              <div key={index} className="relative group">
+                {/* Connector line */}
+                {index < steps.length - 1 && (
+                  <div className="hidden lg:block absolute top-6 -right-3 w-6 h-0.5 bg-neutral-600"></div>
+                )}
+
+                <div className="text-center p-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-neutral-800 text-primary-400 font-medium text-sm rounded-full mb-4 border border-neutral-700 group-hover:border-primary-500/50 transition-colors">
+                    {step.number}
+                  </div>
+                  <h4 className="text-base font-medium text-neutral-200 mb-2">
+                    {step.title}
+                  </h4>
+                  <p className="text-sm text-neutral-400 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
