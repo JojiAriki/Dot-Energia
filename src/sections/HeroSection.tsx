@@ -1,5 +1,3 @@
-'use client';
-
 import { useBasePath } from '@/hooks/useBasePath';
 
 export function HeroSection() {
@@ -8,24 +6,15 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="sticky top-0 min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Hero Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('${getImagePath('images/hero/hero.jpg')}')`,
+          backgroundImage: `url('${getImagePath('images/hero/hero2.jpg')}')`,
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary-900/70 via-secondary-800/60 to-primary-900/50"></div>
-      </div>
-
-      {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-300/15 rounded-full blur-3xl"></div>
-      </div>
-
+      ></div>
       {/* Content */}
       <div className="container-max section-padding text-center relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -66,35 +55,6 @@ export function HeroSection() {
               </svg>
             </a>
           </div>
-
-          {/* Key Statistics */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary-500 mb-2 drop-shadow-lg">
-                30%
-              </div>
-              <div className="text-sm md:text-base text-neutral-200">
-                Economia média
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary-500 mb-2 drop-shadow-lg">
-                100%
-              </div>
-              <div className="text-sm md:text-base text-neutral-200">
-                Energia renovável
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary-500 mb-2 drop-shadow-lg">
-                24h
-              </div>
-              <div className="text-sm md:text-base text-neutral-200">
-                Resposta da análise
-              </div>
-            </div>
-          </div>
-
           {/* Scroll Indicator */}
           <div className="mt-12 flex justify-center">
             <div className="flex flex-col items-center gap-2 text-neutral-300">
