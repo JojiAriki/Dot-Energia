@@ -11,35 +11,35 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dotenergia.com'),
-  title: 'DOT Energia — Soluções Inteligentes em Energia',
+  title: 'Dot Energia — Soluções Inteligentes em Energia',
   description:
     'Maximize a eficiência e reduza custos com soluções sustentáveis de energia. Migre para o Mercado Livre e economize até 30% na sua conta de luz.',
   keywords: [
     'mercado livre de energia',
     'energia renovável',
     'economia de energia',
-    'DOT Energia',
+    'Dot Energia',
     'sustentabilidade',
   ],
-  authors: [{ name: 'DOT Energia' }],
-  creator: 'DOT Energia',
-  publisher: 'DOT Energia',
+  authors: [{ name: 'Dot Energia' }],
+  creator: 'Dot Energia',
+  publisher: 'Dot Energia',
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: 'DOT Energia — Soluções Inteligentes em Energia',
+    title: 'Dot Energia — Soluções Inteligentes em Energia',
     description:
       'Energia eficiente, limpa e rentável. Migre para o Mercado Livre e economize até 30%.',
     url: 'https://dotenergia.com',
-    siteName: 'DOT Energia',
+    siteName: 'Dot Energia',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'DOT Energia - Soluções Inteligentes em Energia',
+        alt: 'Dot Energia - Soluções Inteligentes em Energia',
       },
     ],
     locale: 'pt_BR',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DOT Energia — Soluções Inteligentes em Energia',
+    title: 'Dot Energia — Soluções Inteligentes em Energia',
     description:
       'Energia eficiente, limpa e rentável. Migre para o Mercado Livre.',
     images: ['/og-image.jpg'],
