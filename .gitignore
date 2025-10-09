@@ -424,5 +424,16 @@ FodyWeavers.xsd
 next-env.d.ts
 *.tsbuildinfo
 
+# Build cache and artifacts
+.cache/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
 # Vercel
 .vercel
