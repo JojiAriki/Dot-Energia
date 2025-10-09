@@ -96,11 +96,11 @@ export function TestimonialsSection() {
               (logo, index) => (
                 <div key={`row1-${index}`} className="flex-shrink-0 mx-5">
                   <div className="flex items-center justify-center h-24 px-6">
-                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-primary-100/50 hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                    <div className="bg-transparent backdrop-blur-sm p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
                       <img
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-12 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
@@ -118,11 +118,11 @@ export function TestimonialsSection() {
               (logo, index) => (
                 <div key={`row2-${index}`} className="flex-shrink-0 mx-5">
                   <div className="flex items-center justify-center h-24 px-6">
-                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-primary-100/50 hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                    <div className="bg-transparent backdrop-blur-sm p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
                       <img
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-12 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>

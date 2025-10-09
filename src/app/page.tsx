@@ -16,8 +16,8 @@ export default function HomePage() {
         <HeroSection />
         <MarketInfoSection />
         <BenefitsSection />
-        <SustainabilitySection />
         <TestimonialsSection />
+        <SustainabilitySection />
         <WhyChooseSection />
         <ContactFormSection />
         <Footer />
