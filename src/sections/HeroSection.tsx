@@ -1,4 +1,5 @@
 import { useBasePath } from '@/hooks/useBasePath';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export function HeroSection() {
   const { getImagePath } = useBasePath();
@@ -40,19 +41,7 @@ export function HeroSection() {
               className="inline-flex items-center gap-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border border-primary-500"
             >
               <span>Análise Gratuita</span>
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"
-                />
-              </svg>
+              <ArrowRightIcon className="w-5 h-5" />
             </a>
           </div>
           {/* Scroll Indicator */}

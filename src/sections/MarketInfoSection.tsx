@@ -1,4 +1,10 @@
 import { useBasePath } from '@/hooks/useBasePath';
+import {
+  CurrencyDollarIcon,
+  BoltIcon,
+  CheckCircleIcon,
+  ArrowRightIcon,
+} from '@heroicons/react/24/outline';
 
 export function MarketInfoSection() {
   const { getImagePath } = useBasePath();
@@ -51,19 +57,7 @@ export function MarketInfoSection() {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-12 h-12"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"
-                      />
-                    </svg>
+                    <CurrencyDollarIcon className="w-12 h-12" />
                   </div>
                   <div>
                     <h4 className="font-bold text-neutral-100 mb-2 text-lg">
@@ -78,19 +72,7 @@ export function MarketInfoSection() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-8 h-8"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
+                    <BoltIcon className="w-8 h-8" />
                   </div>
                   <div>
                     <h4 className="font-bold text-neutral-100 mb-2 text-lg">
@@ -105,19 +87,7 @@ export function MarketInfoSection() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-8 h-8"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    <CheckCircleIcon className="w-8 h-8" />
                   </div>
                   <div>
                     <h4 className="font-bold text-neutral-100 mb-2 text-lg">
@@ -139,19 +109,7 @@ export function MarketInfoSection() {
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
               >
                 <span>Descubra seu potencial de economia</span>
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
+                <ArrowRightIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
