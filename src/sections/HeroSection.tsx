@@ -6,7 +6,10 @@ export function HeroSection() {
   const { getImagePath } = useBasePath();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Hero Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

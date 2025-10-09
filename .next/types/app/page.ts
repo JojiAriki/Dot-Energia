@@ -1,4 +1,4 @@
-// File: C:\Users\jojiw\Desktop\teste\Dot-Energia\src\app\page.tsx
+// File: C:\Users\jojiw\source\repos\Dot-Energia\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

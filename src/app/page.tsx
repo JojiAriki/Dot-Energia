@@ -17,11 +17,11 @@ export default function HomePage() {
         <HeroSection />
         <MarketInfoSection />
         <BenefitsSection />
+        <SustainabilitySection />
         <TestimonialsSection />
         <ProcessSection />
-        <SustainabilitySection />
         <WhyChooseSection />
-        {/* <ContactFormSection /> */}
+        <ContactFormSection />
         <Footer />
       </main>
     </>

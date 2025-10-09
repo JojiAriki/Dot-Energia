@@ -23,7 +23,7 @@ const differentials = [
 
 export function WhyChooseSection() {
   return (
-    <section className="py-20 bg-white">
+    <section id="why-choose" className="py-20 bg-white">
       <div className="container-max section-padding">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">

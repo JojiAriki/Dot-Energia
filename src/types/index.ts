@@ -39,6 +39,7 @@ export interface ContactFormData {
 
 export interface ContactInfoProps {
   phone: string;
+  email: string;
   address: string;
   hours: string;
 }
