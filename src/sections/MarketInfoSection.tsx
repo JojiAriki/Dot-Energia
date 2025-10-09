@@ -4,29 +4,29 @@ export function MarketInfoSection() {
   const { getImagePath } = useBasePath();
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-whiteoverflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary-300 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="container-max section-padding relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container-max section-padding relative">
+        <div className="grid lg:grid-cols-5 gap-16 items-center">
           {/* Content */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-3">
             {/* Title */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-900 mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-relaxed">
               Liberdade para{' '}
               <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-500 bg-clip-text text-transparent">
-                escolher
-              </span>{' '}
+                escolher{' '}
+              </span>
               sua energia
             </h2>
 
             {/* Enhanced Description */}
             <div className="space-y-8 mb-12">
-              <div className="text-xl font-light text-secondary-600 leading-relaxed">
+              <div className="text-xl font-light text-neutral-300 leading-relaxed">
                 No{' '}
                 <span className="font-semibold text-primary-600 relative">
                   Mercado Livre de Energia
@@ -34,13 +34,14 @@ export function MarketInfoSection() {
                 </span>
                 , sua empresa ganha autonomia total para negociar energia,
                 garantindo{' '}
-                <span className="font-semibold text-secondary-800">
+                <span className="font-semibold text-neutral-100">
                   economia real
                 </span>{' '}
                 e sustentabilidade.
                 <span>
-                  Contratos inteligentes adaptados ao seu perfil de consumo, com
-                  <span className="font-semibold text-secondary-800">
+                  Contratos inteligentes adaptados ao seu perfil de consumo, com{' '}
+                  {''}
+                  <span className="font-semibold text-neutral-100">
                     previsibilidade financeira
                   </span>{' '}
                   e sustentabilidade em cada kilowatt consumido.
@@ -51,7 +52,7 @@ export function MarketInfoSection() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 text-primary-500 flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-8 h-8"
+                      className="w-12 h-12"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -65,10 +66,10 @@ export function MarketInfoSection() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-secondary-900 mb-2 text-lg">
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
                       Economia Comprovada
                     </h4>
-                    <p className="text-secondary-600 leading-relaxed">
+                    <p className="text-neutral-300 leading-relaxed">
                       Reduza até 30% dos custos com energia através de
                       negociação direta no mercado livre
                     </p>
@@ -92,10 +93,10 @@ export function MarketInfoSection() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-secondary-900 mb-2 text-lg">
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
                       Energia 100% Renovável
                     </h4>
-                    <p className="text-secondary-600 leading-relaxed">
+                    <p className="text-neutral-300 leading-relaxed">
                       Contribua para um futuro sustentável com energia limpa
                       certificada e rastreável
                     </p>
@@ -119,10 +120,10 @@ export function MarketInfoSection() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold text-secondary-900 mb-2 text-lg">
+                    <h4 className="font-bold text-neutral-100 mb-2 text-lg">
                       Migração Simplificada
                     </h4>
-                    <p className="text-secondary-600 leading-relaxed">
+                    <p className="text-neutral-300 leading-relaxed">
                       Processo sem burocracia, sem investimento inicial e sem
                       interrupção no fornecimento
                     </p>
@@ -156,12 +157,17 @@ export function MarketInfoSection() {
           </div>
 
           {/* Image Area - Right Side: replace placeholder with homem.png */}
-          <div className="relative lg:col-span-1 flex items-center justify-center">
-            <div className="w-full max-w-[600px] p-4">
+          <div className="relative lg:col-span-2 flex items-center justify-center">
+            {/* Main Image Container with Enhanced Effects */}
+            <div className="relative w-full max-w-[800px] z-10">
+              {/* Glow Effect Behind Image */}
+              <div className="absolute inset-0 transform scale-105"></div>
+
+              {/* Image */}
               <img
                 src={getImagePath('images/homem.png')}
                 alt="Homem"
-                className="w-full h-auto rounded-lg object-cover"
+                className="relative w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

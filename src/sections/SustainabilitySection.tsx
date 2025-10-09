@@ -2,7 +2,7 @@
   return (
     <section
       id="sustainability"
-      className="relative py-32 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 overflow-hidden"
+      className="relative py-32 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
     >
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary-200/30 rounded-full blur-2xl animate-pulse"></div>
@@ -16,37 +16,37 @@
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div className="space-y-10">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
                 Energia 100% renovável para economia com propósito
               </h2>
-              <p className="text-xl text-secondary-600 leading-relaxed">
+              <p className="text-xl text-neutral-300 leading-relaxed">
                 Transforme os resultados da sua empresa com energia limpa e
                 certificada
               </p>
             </div>
             <div className="space-y-6">
-              <p className="text-lg text-secondary-700 leading-relaxed">
+              <p className="text-lg text-neutral-300 leading-relaxed">
                 Ao migrar com a DOT Energia, sua empresa utiliza energia de
                 fontes limpas e certificadas, reduzindo emissões de carbono e
                 contribuindo para um futuro sustentável.
               </p>
-              <p className="text-lg text-secondary-700 leading-relaxed">
+              <p className="text-lg text-neutral-300 leading-relaxed">
                 Além da economia financeira, você fortalece sua marca e acelera
                 suas metas ESG com impacto real no meio ambiente.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">
+                <div className="text-4xl font-bold text-primary-500 mb-2">
                   100%
                 </div>
-                <div className="text-secondary-600">Energia renovável</div>
+                <div className="text-neutral-300">Energia renovável</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">
+                <div className="text-4xl font-bold text-green-500 mb-2">
                   Zero
                 </div>
-                <div className="text-secondary-600">Emissões de CO</div>
+                <div className="text-neutral-300">Emissões de CO</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-emerald-600 mb-2"></div>

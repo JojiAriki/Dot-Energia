@@ -64,7 +64,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative py-24 bg-gradient-to-br from-neutral-50 via-white to-primary-50/30 overflow-hidden"
+      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
@@ -75,14 +75,14 @@ export function TestimonialsSection() {
       <div className="relative z-10">
         {/* Header */}
         <div className="text-center mb-16 px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Empresas que{' '}
             <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
               confiam
             </span>{' '}
             na DOT Energia
           </h2>
-          <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
             Mais de 500 empresas já economizam até 30% nos custos de energia com
             nossa solução sustentável
           </p>

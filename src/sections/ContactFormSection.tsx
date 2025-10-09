@@ -2,7 +2,7 @@ export function ContactFormSection() {
   return (
     <section
       id="contact-form"
-      className="py-20 bg-gradient-to-br from-secondary-50 to-white"
+      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 z-10 relative"
     >
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -10,11 +10,11 @@ export function ContactFormSection() {
           <div className="space-y-8">
             {/* Título Principal */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6 leading-tight">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Transforme seu futuro energético{' '}
                 <span className="text-primary-500">agora!</span>
               </h2>
-              <p className="text-xl text-secondary-600 leading-relaxed">
+              <p className="text-xl text-neutral-300 leading-relaxed">
                 Descubra quanto sua empresa pode economizar com energia solar.
                 Nossa análise gratuita revela o potencial de redução dos seus
                 custos energéticos.
@@ -23,16 +23,16 @@ export function ContactFormSection() {
 
             {/* Informações de Contato */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-secondary-900 mb-6">
+              <h3 className="text-2xl font-semibold text-white mb-6">
                 Entre em contato
               </h3>
 
               {/* Telefone */}
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-primary-600"
+                      className="w-6 h-6 text-primary-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -47,10 +47,8 @@ export function ContactFormSection() {
                   </div>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary-900">
-                    (11) 99999-9999
-                  </p>
-                  <p className="text-secondary-600 text-sm">
+                  <p className="font-medium text-white">(11) 99999-9999</p>
+                  <p className="text-neutral-300 text-sm">
                     Atendimento comercial
                   </p>
                 </div>
@@ -59,9 +57,9 @@ export function ContactFormSection() {
               {/* Email */}
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-primary-600"
+                      className="w-6 h-6 text-primary-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -76,10 +74,10 @@ export function ContactFormSection() {
                   </div>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary-900">
+                  <p className="font-medium text-white">
                     contato@dotenergia.com.br
                   </p>
-                  <p className="text-secondary-600 text-sm">
+                  <p className="text-neutral-300 text-sm">
                     Resposta em até 24h
                   </p>
                 </div>
@@ -88,9 +86,9 @@ export function ContactFormSection() {
               {/* Endereço */}
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 mt-1">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-primary-600"
+                      className="w-6 h-6 text-primary-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -111,22 +109,22 @@ export function ContactFormSection() {
                   </div>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary-900">
+                  <p className="font-medium text-white">
                     Rua das Energias Renováveis, 123
                   </p>
-                  <p className="text-secondary-600">
+                  <p className="text-neutral-300">
                     Vila Sustentável - São Paulo, SP
                   </p>
-                  <p className="text-secondary-600 text-sm">CEP: 01234-567</p>
+                  <p className="text-neutral-300 text-sm">CEP: 01234-567</p>
                 </div>
               </div>
 
               {/* Horário de Funcionamento */}
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-primary-600"
+                      className="w-6 h-6 text-primary-400"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -141,12 +139,10 @@ export function ContactFormSection() {
                   </div>
                 </div>
                 <div>
-                  <p className="font-medium text-secondary-900">
+                  <p className="font-medium text-white">
                     Segunda a Sexta: 8h às 18h
                   </p>
-                  <p className="text-secondary-600 text-sm">
-                    Sábado: 8h às 12h
-                  </p>
+                  <p className="text-neutral-300 text-sm">Sábado: 8h às 12h</p>
                 </div>
               </div>
             </div>
@@ -154,12 +150,12 @@ export function ContactFormSection() {
 
           {/* Lado Direito - Formulário */}
           <div className="lg:pl-8">
-            <div className="bg-white rounded-3xl shadow-2xl p-8 border border-primary-100">
+            <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-8 border border-white/20">
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-secondary-900 mb-3">
+                <h3 className="text-2xl font-bold text-white mb-3">
                   Solicite sua análise gratuita
                 </h3>
-                <p className="text-secondary-600">
+                <p className="text-neutral-300">
                   Preencha os dados abaixo e receba um estudo personalizado
                 </p>
               </div>
@@ -169,14 +165,14 @@ export function ContactFormSection() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
                   >
                     Nome completo *
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-white/30 bg-white/10 backdrop-blur-sm text-white placeholder-neutral-400 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="Seu nome completo"
                   />
                 </div>
@@ -185,14 +181,14 @@ export function ContactFormSection() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
                   >
                     E-mail corporativo *
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-white/30 bg-white/10 backdrop-blur-sm text-white placeholder-neutral-400 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="email@empresa.com"
                   />
                 </div>
@@ -201,14 +197,14 @@ export function ContactFormSection() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
                   >
                     Telefone *
                   </label>
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-white/30 bg-white/10 backdrop-blur-sm text-white placeholder-neutral-400 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="(11) 99999-9999"
                   />
                 </div>
@@ -217,14 +213,14 @@ export function ContactFormSection() {
                 <div>
                   <label
                     htmlFor="company"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
                   >
                     Empresa *
                   </label>
                   <input
                     type="text"
                     id="company"
-                    className="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-white/30 bg-white/10 backdrop-blur-sm text-white placeholder-neutral-400 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="Nome da sua empresa"
                   />
                 </div>
@@ -233,19 +229,29 @@ export function ContactFormSection() {
                 <div>
                   <label
                     htmlFor="monthlyConsumption"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
                   >
                     Consumo mensal aproximado (kWh)
                   </label>
                   <select
                     id="monthlyConsumption"
-                    className="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-white/30 bg-white/10 backdrop-blur-sm text-white rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   >
-                    <option value="">Selecione uma opção</option>
-                    <option value="500-1000">500 a 1.000 kWh</option>
-                    <option value="1000-5000">1.000 a 5.000 kWh</option>
-                    <option value="5000-10000">5.000 a 10.000 kWh</option>
-                    <option value="10000+">Acima de 10.000 kWh</option>
+                    <option value="" className="text-gray-900">
+                      Selecione uma opção
+                    </option>
+                    <option value="500-1000" className="text-gray-900">
+                      500 a 1.000 kWh
+                    </option>
+                    <option value="1000-5000" className="text-gray-900">
+                      1.000 a 5.000 kWh
+                    </option>
+                    <option value="5000-10000" className="text-gray-900">
+                      5.000 a 10.000 kWh
+                    </option>
+                    <option value="10000+" className="text-gray-900">
+                      Acima de 10.000 kWh
+                    </option>
                   </select>
                 </div>
 
@@ -258,7 +264,7 @@ export function ContactFormSection() {
                 </button>
 
                 {/* Disclaimer */}
-                <p className="text-xs text-secondary-500 text-center leading-relaxed">
+                <p className="text-xs text-neutral-400 text-center leading-relaxed">
                   Ao enviar este formulário, você concorda em receber
                   comunicações da DOT Energia. Seus dados estão seguros conosco.
                 </p>
