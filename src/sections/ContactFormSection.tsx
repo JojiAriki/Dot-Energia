@@ -19,7 +19,9 @@ export function ContactFormSection() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Transforme seu futuro energético{' '}
-                <span className="text-primary-500">agora!</span>
+                <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
+                  agora!
+                </span>
               </h2>
               <p className="text-xl text-neutral-300 leading-relaxed">
                 Descubra quanto sua empresa pode economizar com energia solar.
