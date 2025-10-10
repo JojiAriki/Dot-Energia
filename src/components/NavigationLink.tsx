@@ -4,17 +4,23 @@ interface NavigationLinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
 export function NavigationLink({
   href,
   children,
   className = '',
+  onClick,
 }: NavigationLinkProps) {
   const handleClick = () => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Chama o onClick adicional se fornecido
+    if (onClick) {
+      onClick();
     }
   };
 
