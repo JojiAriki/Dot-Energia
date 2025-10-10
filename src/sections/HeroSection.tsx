@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="sticky top-0 min-h-screen flex items-center justify-center overflow-hidden"
+      className="fixed top-0 left-0 right-0 min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Hero Background Image */}
       <div
@@ -46,10 +46,10 @@ export function HeroSection() {
           </div>
           {/* Scroll Indicator */}
           <div className="mt-12 flex justify-center">
-            <div className="flex flex-col items-center gap-2 text-neutral-300">
+            <div className="flex flex-col items-center gap-2 text-neutral-300 scroll-indicator">
               <span className="text-sm font-light">Role para baixo</span>
-              <div className="w-6 h-10 border-2 border-primary-500/60 rounded-full flex justify-center p-1">
-                <div className="w-1 h-3 bg-primary-500 rounded-full"></div>
+              <div className="w-6 h-10 border-2 border-primary-500/60 rounded-full flex justify-center p-1 relative">
+                <div className="w-1 h-3 bg-primary-500 rounded-full scroll-indicator-dot"></div>
               </div>
             </div>
           </div>

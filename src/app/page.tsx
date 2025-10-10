@@ -15,7 +15,7 @@ export default function HomePage() {
     <>
       <Header />
       <HeroSection />
-      <main className="relative z-10 bg-white">
+      <main className="relative z-10 bg-white" style={{ marginTop: '100vh' }}>
         <MarketInfoSection />
         <BenefitsSection />
         <TestimonialsSection />
@@ -24,7 +24,6 @@ export default function HomePage() {
         <ContactFormSection />
         <Footer />
       </main>
-
       {/* Componentes flutuantes */}
       <WhatsAppFloat />
       <SocialSidebar />
