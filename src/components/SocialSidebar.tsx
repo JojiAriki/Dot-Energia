@@ -40,7 +40,7 @@ export function SocialSidebar() {
 
   return (
     <div
-      className={`fixed left-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3 transition-all duration-500 ${
+      className={`hidden md:flex fixed left-6 top-1/2 -translate-y-1/2 z-40 md:flex-col gap-3 transition-all duration-500 ${
         isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
       }`}
     >

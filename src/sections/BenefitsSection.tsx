@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import {
   CurrencyDollarIcon,
   BoltIcon,
@@ -7,8 +8,56 @@ import {
   ShieldCheckIcon,
 } from '@heroicons/react/24/outline';
 
+type Benefit = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  color: string;
+};
+
+function BenefitCard({ benefit }: { benefit: Benefit }) {
+  return (
+    <div className="group relative flex h-full min-h-[360px] flex-col bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 hover:border-primary-400/50 shadow-2xl hover:shadow-primary-500/20 transition-all duration-500 hover:-translate-y-3 overflow-hidden">
+      {/* Hover gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-500/0 to-primary-600/0 group-hover:from-primary-500/10 group-hover:to-primary-600/5 transition-all duration-500 rounded-3xl"></div>
+
+      {/* Icon */}
+      <div className="relative z-10 mb-8">
+        <div className="relative inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white shadow-2xl group-hover:scale-110 group-hover:shadow-primary-500/60 transition-all duration-500 border border-primary-500">
+          {/* Inner glow effect */}
+          <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
+
+          {/* Icon container with enhanced styling */}
+          <div className="relative z-10 transform group-hover:rotate-12 transition-transform duration-500">
+            {benefit.icon}
+          </div>
+
+          {/* Outer ring */}
+          <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-primary-300/40 to-primary-700/40 blur-sm"></div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex-1">
+        <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-colors duration-300">
+          {benefit.title}
+        </h3>
+        <p className="text-neutral-300 leading-relaxed group-hover:text-neutral-200 transition-colors duration-300">
+          {benefit.description}
+        </p>
+      </div>
+
+      {/* Decorative corner element */}
+      <div className="absolute top-4 right-4 w-16 h-16 bg-primary-500/20 rounded-full blur-lg group-hover:bg-primary-400/30 transition-colors duration-500"></div>
+
+      {/* Bottom accent line */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+    </div>
+  );
+}
+
 export function BenefitsSection() {
-  const benefits = [
+  const benefits: Benefit[] = [
     {
       icon: <CurrencyDollarIcon className="w-8 h-8" />,
       title: 'Economia até 30%',
@@ -89,47 +138,22 @@ export function BenefitsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="block md:hidden -mx-4">
+          <div className="flex items-stretch overflow-x-auto snap-x snap-mandatory gap-6 px-4 pb-4 scrollbar-thin scrollbar-thumb-primary-500/40 scrollbar-track-transparent">
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex snap-center min-w-[280px] max-w-[280px]"
+              >
+                <BenefitCard benefit={benefit} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="group relative bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 hover:border-primary-400/50 shadow-2xl hover:shadow-primary-500/20 transition-all duration-500 hover:-translate-y-3 overflow-hidden"
-            >
-              {/* Hover gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/0 to-primary-600/0 group-hover:from-primary-500/10 group-hover:to-primary-600/5 transition-all duration-500 rounded-3xl"></div>
-
-              {/* Icon */}
-              <div className="relative z-10 mb-8">
-                <div className="relative inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white shadow-2xl group-hover:scale-110 group-hover:shadow-primary-500/60 transition-all duration-500 border border-primary-500">
-                  {/* Inner glow effect */}
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
-
-                  {/* Icon container with enhanced styling */}
-                  <div className="relative z-10 transform group-hover:rotate-12 transition-transform duration-500">
-                    {benefit.icon}
-                  </div>
-
-                  {/* Outer ring */}
-                  <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-primary-300/40 to-primary-700/40 blur-sm"></div>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-300 transition-colors duration-300">
-                  {benefit.title}
-                </h3>
-                <p className="text-neutral-300 leading-relaxed group-hover:text-neutral-200 transition-colors duration-300">
-                  {benefit.description}
-                </p>
-              </div>
-
-              {/* Decorative corner element */}
-              <div className="absolute top-4 right-4 w-16 h-16 bg-primary-500/20 rounded-full blur-lg group-hover:bg-primary-400/30 transition-colors duration-500"></div>
-
-              {/* Bottom accent line */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </div>
+            <BenefitCard key={index} benefit={benefit} />
           ))}
         </div>
       </div>
