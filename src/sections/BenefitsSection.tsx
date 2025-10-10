@@ -10,42 +10,42 @@ import {
 export function BenefitsSection() {
   const benefits = [
     {
-      icon: <CurrencyDollarIcon className="w-12 h-12" />,
+      icon: <CurrencyDollarIcon className="w-8 h-8" />,
       title: 'Economia até 30%',
       description:
         'Reduza significativamente os custos com energia elétrica da sua empresa através de contratos otimizados',
       color: 'from-emerald-500 to-emerald-600',
     },
     {
-      icon: <BoltIcon className="w-12 h-12" />,
+      icon: <BoltIcon className="w-8 h-8" />,
       title: '100% Renovável',
       description:
         'Energia limpa e certificada proveniente de fontes renováveis para um futuro sustentável',
       color: 'from-green-500 to-green-600',
     },
     {
-      icon: <ChartBarIcon className="w-12 h-12" />,
+      icon: <ChartBarIcon className="w-8 h-8" />,
       title: 'Previsibilidade',
       description:
         'Contratos fixos que garantem estabilidade e previsibilidade nos custos energéticos',
       color: 'from-blue-500 to-blue-600',
     },
     {
-      icon: <CheckCircleIcon className="w-12 h-12" />,
+      icon: <CheckCircleIcon className="w-8 h-8" />,
       title: 'Sem Interrupção',
       description:
         'Migração sem burocracia, sem investimento inicial e sem risco para suas operações',
       color: 'from-purple-500 to-purple-600',
     },
     {
-      icon: <ArrowTrendingUpIcon className="w-12 h-12" />,
+      icon: <ArrowTrendingUpIcon className="w-8 h-8" />,
       title: 'ROI Garantido',
       description:
         'Retorno sobre investimento comprovado e imediato com economia real',
       color: 'from-orange-500 to-orange-600',
     },
     {
-      icon: <ShieldCheckIcon className="w-12 h-12" />,
+      icon: <ShieldCheckIcon className="w-8 h-8" />,
       title: 'Segurança Total',
       description:
         'Fornecimento confiável com a mesma infraestrutura e garantia de continuidade',
@@ -79,7 +79,7 @@ export function BenefitsSection() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Vantagens da{' '}
-            <span className="text-primary-400 bg-gradient-to-r from-primary-400 to-primary-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
               DOT Energia
             </span>
           </h2>
@@ -100,9 +100,9 @@ export function BenefitsSection() {
 
               {/* Icon */}
               <div className="relative z-10 mb-8">
-                <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white shadow-2xl group-hover:scale-110 group-hover:shadow-primary-500/60 transition-all duration-500">
+                <div className="relative inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 via-primary-500 to-primary-600 text-white shadow-2xl group-hover:scale-110 group-hover:shadow-primary-500/60 transition-all duration-500 border border-primary-500">
                   {/* Inner glow effect */}
-                  <div className="absolute inset-2 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
+                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
 
                   {/* Icon container with enhanced styling */}
                   <div className="relative z-10 transform group-hover:rotate-12 transition-transform duration-500">
@@ -110,7 +110,7 @@ export function BenefitsSection() {
                   </div>
 
                   {/* Outer ring */}
-                  <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary-300/40 to-primary-700/40 blur-sm"></div>
+                  <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-primary-300/40 to-primary-700/40 blur-sm"></div>
                 </div>
               </div>
 
