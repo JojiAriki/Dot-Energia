@@ -69,24 +69,15 @@ export function Header() {
             </NavigationLink>
             <NavigationLink
               href="#benefits"
-              className={`font-medium transition-colors duration-200 text-sm xl:text-base ${
+              className={`font-medium transition-colors duration-20dd0 text-sm xl:text-base ${
                 isScrolled
                   ? 'text-gray-300 hover:text-primary-400'
                   : 'text-white/90 hover:text-primary-500'
               }`}
             >
-              Início
+              Vantagens
             </NavigationLink>
-            <NavigationLink
-              href="#testimonials"
-              className={`font-medium transition-colors duration-200 text-sm xl:text-base ${
-                isScrolled
-                  ? 'text-gray-300 hover:text-primary-400'
-                  : 'text-white/90 hover:text-primary-500'
-              }`}
-            >
-              Depoimentos
-            </NavigationLink>
+
             <NavigationLink
               href="#sustainability"
               className={`font-medium transition-colors duration-200 text-sm xl:text-base ${
@@ -107,7 +98,16 @@ export function Header() {
             >
               Por que escolher
             </NavigationLink>
-
+            <NavigationLink
+              href="#contact-form"
+              className={`font-medium transition-colors duration-200 text-sm xl:text-base ${
+                isScrolled
+                  ? 'text-gray-300 hover:text-primary-400'
+                  : 'text-white/90 hover:text-primary-500'
+              }`}
+            >
+              Contato
+            </NavigationLink>
             {/* CTA Button */}
             <NavigationLink
               href="#contact-form"

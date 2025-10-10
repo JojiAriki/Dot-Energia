@@ -14,9 +14,13 @@ export function NavigationLink({
   onClick,
 }: NavigationLinkProps) {
   const handleClick = () => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (href === '#home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.querySelector(href);
+      if (element instanceof HTMLElement) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
     // Chama o onClick adicional se fornecido
     if (onClick) {

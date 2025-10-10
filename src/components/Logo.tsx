@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useBasePath } from '@/hooks/useBasePath';
+import { NavigationLink } from './NavigationLink';
 
 interface LogoProps {
   className?: string;
@@ -25,14 +26,21 @@ export function Logo({
 
   return (
     <div className={`flex items-center ${className}`}>
-      <Image
-        src={logoSrc}
-        alt="DOT Energia - Soluções Inteligentes em Energia"
-        width={width}
-        height={height}
-        className="object-contain"
-        priority={true}
-      />
+      <a
+        href="#home"
+        aria-label="DOT Energia - Soluções Inteligentes em Energia"
+      ></a>
+
+      <NavigationLink href="#home" className="">
+        <Image
+          src={logoSrc}
+          alt="DOT Energia - Soluções Inteligentes em Energia"
+          width={width}
+          height={height}
+          className="object-contain"
+          priority={true}
+        />
+      </NavigationLink>
     </div>
   );
 }

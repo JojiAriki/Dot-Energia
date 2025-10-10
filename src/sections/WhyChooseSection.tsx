@@ -32,7 +32,7 @@ export function WhyChooseSection() {
   return (
     <section
       id="why-choose"
-      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 relative -z-0"
+      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 relative -z-0 scroll-mt-10"
     >
       <div className="container-max section-padding">
         <div className="text-center mb-16">

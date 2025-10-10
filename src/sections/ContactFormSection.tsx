@@ -9,7 +9,7 @@ export function ContactFormSection() {
   return (
     <section
       id="contact-form"
-      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 z-10 relative"
+      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 z-10 relative scroll-mt-10"
     >
       <div className="container-max section-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">

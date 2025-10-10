@@ -35,7 +35,7 @@ export function MarketInfoSection() {
   return (
     <section
       id="market-info"
-      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden"
+      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden scroll-mt-10"
     >
       {/* Background Elements */}
       {/* <div className="absolute inset-0 opacity-5">

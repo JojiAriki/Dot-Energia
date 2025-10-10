@@ -56,7 +56,7 @@ export function BenefitsSection() {
   return (
     <section
       id="benefits"
-      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
+      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden scroll-mt-7"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">

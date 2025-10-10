@@ -64,7 +64,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
+      className="relative bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden scroll-mt-28"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
