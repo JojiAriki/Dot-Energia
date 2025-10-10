@@ -64,7 +64,7 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
+      className="relative bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
@@ -77,7 +77,7 @@ export function TestimonialsSection() {
         <div className="text-center mb-16 px-6">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Empresas que{' '}
-            <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
               confiam
             </span>{' '}
             na DOT Energia
