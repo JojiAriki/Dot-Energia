@@ -79,7 +79,7 @@ export function BenefitsSection() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Vantagens da{' '}
-            <span className="bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
               DOT Energia
             </span>
           </h2>

@@ -50,7 +50,7 @@ export function MarketInfoSection() {
             {/* Title */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-relaxed">
               Liberdade para{' '}
-              <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
+              <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-600 bg-clip-text text-transparent">
                 escolher{' '}
               </span>
               sua energia
@@ -60,7 +60,7 @@ export function MarketInfoSection() {
             <div className="space-y-8 mb-12">
               <div className="text-xl font-light text-neutral-300 leading-relaxed">
                 No{' '}
-                <span className="font-semibold bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent relative">
+                <span className="font-semibold text-primary-500 relative">
                   Mercado Livre de Energia
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-primary-400 to-primary-600"></div>
                 </span>
