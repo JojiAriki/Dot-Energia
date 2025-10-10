@@ -39,6 +39,26 @@ export function Header() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <NavigationLink
+              href="#home"
+              className={`font-medium transition-colors duration-200 ${
+                isScrolled
+                  ? 'text-gray-300 hover:text-primary-400'
+                  : 'text-white/90 hover:text-primary-500'
+              }`}
+            >
+              Início
+            </NavigationLink>
+            <NavigationLink
+              href="#market-info"
+              className={`font-medium transition-colors duration-200 ${
+                isScrolled
+                  ? 'text-gray-300 hover:text-primary-400'
+                  : 'text-white/90 hover:text-primary-500'
+              }`}
+            >
+              Mercado
+            </NavigationLink>
+            <NavigationLink
               href="#benefits"
               className={`font-medium transition-colors duration-200 ${
                 isScrolled
@@ -49,14 +69,24 @@ export function Header() {
               Benefícios
             </NavigationLink>
             <NavigationLink
-              href="#process"
+              href="#testimonials"
               className={`font-medium transition-colors duration-200 ${
                 isScrolled
                   ? 'text-gray-300 hover:text-primary-400'
                   : 'text-white/90 hover:text-primary-500'
               }`}
             >
-              Como Funciona
+              Depoimentos
+            </NavigationLink>
+            <NavigationLink
+              href="#sustainability"
+              className={`font-medium transition-colors duration-200 ${
+                isScrolled
+                  ? 'text-gray-300 hover:text-primary-400'
+                  : 'text-white/90 hover:text-primary-500'
+              }`}
+            >
+              Sustentabilidade
             </NavigationLink>
             <NavigationLink
               href="#why-choose"
@@ -67,16 +97,6 @@ export function Header() {
               }`}
             >
               Por que escolher
-            </NavigationLink>
-            <NavigationLink
-              href="#testimonials"
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled
-                  ? 'text-gray-300 hover:text-primary-400'
-                  : 'text-white/90 hover:text-primary-500'
-              }`}
-            >
-              Depoimentos
             </NavigationLink>
 
             {/* CTA Button */}

@@ -7,6 +7,8 @@ import { SustainabilitySection } from '@/sections/SustainabilitySection';
 import { WhyChooseSection } from '@/sections/WhyChooseSection';
 import { ContactFormSection } from '@/sections/ContactFormSection';
 import { Footer } from '@/sections/Footer';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
+import { SocialSidebar } from '@/components/SocialSidebar';
 
 export default function HomePage() {
   return (
@@ -22,6 +24,10 @@ export default function HomePage() {
         <ContactFormSection />
         <Footer />
       </main>
+
+      {/* Componentes flutuantes */}
+      <WhatsAppFloat />
+      <SocialSidebar />
     </>
   );
 }

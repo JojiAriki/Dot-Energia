@@ -27,7 +27,7 @@ const quickLinks = [
 
 export function Footer() {
   return (
-    <div className="relative bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden">
       {/* Gradiente de conexão no topo */}
       <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent via-secondary-900/50 to-secondary-950"></div>
 
@@ -207,6 +207,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
