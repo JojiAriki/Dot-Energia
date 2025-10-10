@@ -9,11 +9,13 @@ import { ContactFormSection } from '@/sections/ContactFormSection';
 import { Footer } from '@/sections/Footer';
 import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 import { SocialSidebar } from '@/components/SocialSidebar';
+import { AnchorScrollHandler } from '@/components/client/AnchorScrollHandler';
 
 export default function HomePage() {
   return (
     <>
       <Header />
+      <AnchorScrollHandler />
       <HeroSection />
       <main className="relative z-10 bg-white" style={{ marginTop: '100vh' }}>
         <MarketInfoSection />
