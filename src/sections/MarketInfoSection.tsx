@@ -35,10 +35,10 @@ export function MarketInfoSection() {
   return (
     <section className="relative py-24 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 text-white overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
+      {/* <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary-500 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-primary-300 rounded-full blur-3xl"></div>
-      </div>
+      </div> */}
 
       <div className="container-max section-padding relative">
         <div className="grid lg:grid-cols-5 gap-16 items-center">
@@ -47,7 +47,7 @@ export function MarketInfoSection() {
             {/* Title */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-relaxed">
               Liberdade para{' '}
-              <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-500 bg-clip-text text-transparent">
+              <span className="text-primary-500 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
                 escolher{' '}
               </span>
               sua energia
@@ -57,7 +57,7 @@ export function MarketInfoSection() {
             <div className="space-y-8 mb-12">
               <div className="text-xl font-light text-neutral-300 leading-relaxed">
                 No{' '}
-                <span className="font-semibold text-primary-600 relative">
+                <span className="font-semibold bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent relative">
                   Mercado Livre de Energia
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-primary-400 to-primary-600"></div>
                 </span>
@@ -155,7 +155,7 @@ export function MarketInfoSection() {
         </div>
 
         {/* Process Section */}
-        <div className="mt-24 pt-16 border-t border-neutral-700/30">
+        <div className="pt-24">
           <div className="text-center mb-12">
             <h3 className="text-xl md:text-2xl font-medium text-neutral-200 mb-4">
               Como chegamos até você
