@@ -46,9 +46,11 @@ export function HeroSection() {
           </div>
           {/* Scroll Indicator */}
           <div className="mt-12 flex justify-center">
-            <div className="flex flex-col items-center gap-2 text-neutral-300 scroll-indicator">
-              <span className="text-sm font-light">Role para baixo</span>
-              <div className="w-6 h-10 border-2 border-primary-500/60 rounded-full flex justify-center p-1 relative">
+            <div className="flex flex-col items-center gap-3 text-neutral-300 scroll-indicator cursor-pointer hover:text-primary-400 transition-colors duration-300">
+              <span className="text-sm font-light tracking-wide">
+                Role para baixo
+              </span>
+              <div className="w-6 h-10 border-2 border-primary-500/60 rounded-full flex justify-center p-1 relative hover:border-primary-400/80 transition-colors duration-300">
                 <div className="w-1 h-3 bg-primary-500 rounded-full scroll-indicator-dot"></div>
               </div>
             </div>
