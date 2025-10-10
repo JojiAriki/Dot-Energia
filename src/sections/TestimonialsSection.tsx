@@ -89,18 +89,21 @@ export function TestimonialsSection() {
         </div>
 
         {/* First Row - Moving Right */}
-        <div className="mb-8 overflow-hidden">
-          <div className="flex animate-scroll-right whitespace-nowrap">
+        <div className="mb-8 overflow-hidden w-full">
+          <div className="flex animate-scroll-right whitespace-nowrap w-max">
             {/* Duplicamos os logos para animação contínua */}
             {[...firstRowLogos, ...firstRowLogos, ...firstRowLogos].map(
               (logo, index) => (
-                <div key={`row1-${index}`} className="flex-shrink-0 mx-5">
-                  <div className="flex items-center justify-center h-24 px-6">
-                    <div className="bg-transparent backdrop-blur-sm p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                <div
+                  key={`row1-${index}`}
+                  className="flex-shrink-0 mx-3 lg:mx-5"
+                >
+                  <div className="flex items-center justify-center h-20 lg:h-24 px-4 lg:px-6">
+                    <div className="bg-transparent backdrop-blur-sm p-3 lg:p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
                       <img
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain transition-all duration-300"
+                        className="h-8 lg:h-12 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
@@ -111,18 +114,21 @@ export function TestimonialsSection() {
         </div>
 
         {/* Second Row - Moving Left */}
-        <div className="mb-16 overflow-hidden">
-          <div className="flex animate-scroll-left whitespace-nowrap">
+        <div className="mb-16 overflow-hidden w-full">
+          <div className="flex animate-scroll-left whitespace-nowrap w-max">
             {/* Duplicamos os logos para animação contínua */}
             {[...secondRowLogos, ...secondRowLogos, ...secondRowLogos].map(
               (logo, index) => (
-                <div key={`row2-${index}`} className="flex-shrink-0 mx-5">
-                  <div className="flex items-center justify-center h-24 px-6">
-                    <div className="bg-transparent backdrop-blur-sm p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
+                <div
+                  key={`row2-${index}`}
+                  className="flex-shrink-0 mx-3 lg:mx-5"
+                >
+                  <div className="flex items-center justify-center h-20 lg:h-24 px-4 lg:px-6">
+                    <div className="bg-transparent backdrop-blur-sm p-3 lg:p-4 rounded-2xl shadow-lg hover:shadow-xl hover:border-primary-200/50 transition-all duration-300 group">
                       <img
                         src={logo.src}
                         alt={logo.alt}
-                        className="h-12 w-auto object-contain transition-all duration-300"
+                        className="h-8 lg:h-12 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
