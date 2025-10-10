@@ -22,7 +22,7 @@ const differentials = [
     description: 'Adaptadas ao consumo e perfil de cada empresa',
   },
   {
-    icon: <ChatBubbleLeftRightIcon className="w-16 h-16 text-primary-500" />,
+    icon: <ChatBubbleLeftRightIcon className="w-16 h-16 text-primary-500 " />,
     title: 'Atendimento humano',
     description: 'Suporte técnico e consultivo em todas as etapas',
   },
@@ -32,7 +32,7 @@ export function WhyChooseSection() {
   return (
     <section
       id="why-choose"
-      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 z-10 relative"
+      className="py-20 bg-gradient-to-br from-secondary-950 via-secondary-900 to-secondary-950 relative -z-0"
     >
       <div className="container-max section-padding">
         <div className="text-center mb-16">
@@ -47,7 +47,7 @@ export function WhyChooseSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {differentials.map((item, index) => (
             <div key={index}>
-              <div className="mb-4">{item.icon}</div>
+              <div className="mb-4 ">{item.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-3">
                 {item.title}
               </h3>
