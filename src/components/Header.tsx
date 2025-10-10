@@ -75,7 +75,7 @@ export function Header() {
                   : 'text-white/90 hover:text-primary-500'
               }`}
             >
-              Benefícios
+              Início
             </NavigationLink>
             <NavigationLink
               href="#testimonials"

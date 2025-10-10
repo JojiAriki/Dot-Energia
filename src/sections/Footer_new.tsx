@@ -65,6 +65,7 @@ export function Footer() {
 
       <div className="relative z-10 py-20">
         <div className="container-max section-padding">
+<<<<<<< HEAD
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* Company Info */}
             <div className="lg:col-span-2 text-center md:text-left">
@@ -72,12 +73,25 @@ export function Footer() {
                 <Logo width={200} height={60} variant="dark" />
               </div>
               <p className="text-gray-300 mb-8 max-w-md text-lg leading-relaxed mx-auto md:mx-0">
+=======
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            {/* Company Info */}
+            <div className="lg:col-span-2">
+              <div className="mb-8">
+                <Logo width={200} height={60} variant="dark" />
+              </div>
+              <p className="text-gray-300 mb-8 max-w-md text-lg leading-relaxed">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                 Transformamos o futuro energético das empresas com soluções
                 inteligentes, sustentáveis e econômicas em energia renovável.
               </p>
 
               {/* Social Media */}
+<<<<<<< HEAD
               <div className="flex gap-4 mb-8 justify-center md:justify-start">
+=======
+              <div className="flex gap-4 mb-8">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                 <a
                   href="https://linkedin.com/company/dotenergia"
                   target="_blank"
@@ -112,16 +126,24 @@ export function Footer() {
             </div>
 
             {/* Quick Links */}
+<<<<<<< HEAD
             <div className="text-center md:text-left">
+=======
+            <div>
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
               <h3 className="font-bold text-xl mb-6 text-white">
                 Links Rápidos
               </h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
+<<<<<<< HEAD
                   <li
                     key={link.name}
                     className="flex justify-center md:justify-start"
                   >
+=======
+                  <li key={link.name}>
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                     <NavigationLink
                       href={link.href}
                       className="text-gray-300 hover:text-primary-400 transition-colors duration-300 group flex items-center"
@@ -135,37 +157,61 @@ export function Footer() {
             </div>
 
             {/* Contact Info */}
+<<<<<<< HEAD
             <div className="text-center md:text-left">
               <h3 className="font-bold text-xl mb-6 text-white">Contato</h3>
               <div className="space-y-4 text-gray-300">
                 <div className="group">
                   <div className="font-medium text-white mb-1 flex items-center justify-center md:justify-start">
+=======
+            <div>
+              <h3 className="font-bold text-xl mb-6 text-white">Contato</h3>
+              <div className="space-y-4 text-gray-300">
+                <div className="group">
+                  <div className="font-medium text-white mb-1 flex items-center">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                     <PhoneIcon className="w-4 h-4 mr-2 text-primary-500" />
                     Telefone:
                   </div>
                   <a
                     href={`tel:${contactInfo.phone.replace(/\D/g, '')}`}
+<<<<<<< HEAD
                     className="hover:text-primary-400 transition-colors block"
+=======
+                    className="hover:text-primary-400 transition-colors"
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                   >
                     {contactInfo.phone}
                   </a>
                 </div>
 
                 <div className="group">
+<<<<<<< HEAD
                   <div className="font-medium text-white mb-1 flex items-center justify-center md:justify-start">
+=======
+                  <div className="font-medium text-white mb-1 flex items-center">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                     <EnvelopeIcon className="w-4 h-4 mr-2 text-primary-500" />
                     Email:
                   </div>
                   <a
                     href={`mailto:${contactInfo.email}`}
+<<<<<<< HEAD
                     className="hover:text-primary-400 transition-colors block"
+=======
+                    className="hover:text-primary-400 transition-colors"
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                   >
                     {contactInfo.email}
                   </a>
                 </div>
 
                 <div>
+<<<<<<< HEAD
                   <div className="font-medium text-white mb-1 flex items-center justify-center md:justify-start">
+=======
+                  <div className="font-medium text-white mb-1 flex items-center">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                     <ClockIcon className="w-4 h-4 mr-2 text-primary-500" />
                     Horário:
                   </div>
@@ -177,13 +223,21 @@ export function Footer() {
 
           {/* Bottom Section */}
           <div className="border-t border-gray-700/50 pt-8">
+<<<<<<< HEAD
             <div className="flex flex-col lg:flex-row justify-between items-center gap-6 text-center lg:text-left">
+=======
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
               <div className="text-sm text-gray-400 text-center lg:text-left">
                 © 2024 DOT Energia. Todos os direitos reservados. | CNPJ:
                 00.000.000/0001-00
               </div>
 
+<<<<<<< HEAD
               <div className="flex flex-wrap justify-center gap-4 lg:gap-6 text-sm">
+=======
+              <div className="flex flex-wrap justify-center gap-6 text-sm">
+>>>>>>> acc48ae44ca5e4e3a86e48551430b7aa4f38e187
                 <a
                   href="/politica-privacidade"
                   className="text-gray-400 hover:text-white transition-colors duration-300 relative group"
