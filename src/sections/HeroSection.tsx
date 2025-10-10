@@ -20,9 +20,9 @@ export function HeroSection() {
       <div className="container-max section-padding text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Title */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-tight mb-8 tracking-tight drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white leading-tight mb-8 tracking-tight">
             Transforme sua empresa com{' '}
-            <span className="text-primary-500 drop-shadow-sm">
+            <span className="bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
               energia inteligente
             </span>
           </h1>
