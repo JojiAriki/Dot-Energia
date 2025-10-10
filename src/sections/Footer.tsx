@@ -176,7 +176,7 @@ export function Footer() {
           <div className="border-t border-gray-700/50 pt-8">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
               <div className="text-sm text-gray-400 text-center lg:text-left">
-                © 2024 DOT Energia. Todos os direitos reservados.
+                © 2025 Dot Energia. Todos os direitos reservados.
               </div>
 
               <div className="flex flex-wrap justify-center gap-6 text-sm">
