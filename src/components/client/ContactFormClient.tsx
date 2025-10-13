@@ -9,12 +9,14 @@ import {
   contactFormSchema,
   type ContactFormData,
 } from '@/lib/validations/contact-form';
+import { submitLead } from '@/services/lead';
 
 export default function ContactFormClient() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
     'idle' | 'success' | 'error'
   >('idle');
+  const [errorMessage, setErrorMessage] = useState<string>('');
 
   const {
     register,
@@ -29,26 +31,38 @@ export default function ContactFormClient() {
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
-      // Aqui você pode adicionar sua lógica de envio futuramente
-      console.log('Dados do formulário validados:', data);
+      // Envia o lead para a API
+      const result = await submitLead(data);
 
-      // Simular processamento
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (result.success) {
+        setSubmitStatus('success');
+        reset();
 
-      setSubmitStatus('success');
-      reset();
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(result.message);
 
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
+        setTimeout(() => {
+          setSubmitStatus('idle');
+          setErrorMessage('');
+        }, 5000);
+      }
     } catch (error) {
       console.error('Erro:', error);
       setSubmitStatus('error');
+      setErrorMessage(
+        'Erro ao enviar solicitação. Tente novamente mais tarde.'
+      );
 
       setTimeout(() => {
         setSubmitStatus('idle');
+        setErrorMessage('');
       }, 5000);
     } finally {
       setIsSubmitting(false);
@@ -241,10 +255,10 @@ export default function ContactFormClient() {
       {submitStatus === 'success' && (
         <div className="p-4 bg-green-500/20 border border-green-400/50 rounded-xl backdrop-blur-sm animate-fade-in">
           <p className="text-green-300 font-semibold">
-            ✅ Formulário validado com sucesso!
+            ✅ Solicitação enviada com sucesso!
           </p>
           <p className="text-green-200 text-sm mt-1">
-            Todos os dados foram preenchidos corretamente.
+            Nossa equipe entrará em contato em até 24h.
           </p>
         </div>
       )}
@@ -252,10 +266,10 @@ export default function ContactFormClient() {
       {submitStatus === 'error' && (
         <div className="p-4 bg-red-500/20 border border-red-400/50 rounded-xl backdrop-blur-sm animate-fade-in">
           <p className="text-red-300 font-semibold">
-            ❌ Erro ao processar formulário
+            ❌ Erro ao enviar formulário
           </p>
           <p className="text-red-200 text-sm mt-1">
-            Por favor, tente novamente.
+            {errorMessage || 'Por favor, tente novamente.'}
           </p>
         </div>
       )}

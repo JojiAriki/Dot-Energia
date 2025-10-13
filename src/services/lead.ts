@@ -1,21 +1,34 @@
-import type { ContactFormData } from '@/lib/validations';
+import type { ContactFormData } from '@/lib/validations/contact-form';
 
+/**
+ * Envia um lead para o RD Station através da API
+ *
+ * @param data - Dados validados do formulário de contato
+ * @returns Promise com resultado do envio
+ */
 export async function submitLead(
   data: ContactFormData
 ): Promise<{ success: boolean; message: string }> {
   try {
-    // Aqui você integraria com seu serviço de leads (ex: CRM, email service, etc.)
+    // Envia para a API Route que processa o lead
+    const response = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-    // Simulação de envio
-    console.log('Lead enviado:', data);
+    const result = await response.json();
 
-    // Simular delay de rede
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'Erro ao enviar lead');
+    }
 
-    // Simular sucesso (em produção, substituir pela integração real)
     return {
       success: true,
       message:
+        result.message ||
         'Análise solicitada com sucesso! Nossa equipe entrará em contato em até 24h.',
     };
   } catch (error) {
@@ -23,7 +36,9 @@ export async function submitLead(
     return {
       success: false,
       message:
-        'Erro ao enviar solicitação. Tente novamente ou entre em contato pelo telefone.',
+        error instanceof Error
+          ? error.message
+          : 'Erro ao enviar solicitação. Tente novamente ou entre em contato pelo telefone.',
     };
   }
 }
