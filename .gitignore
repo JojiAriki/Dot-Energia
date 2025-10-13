@@ -421,7 +421,7 @@ FodyWeavers.xsd
 # Next.js specific
 /.next/
 /out/
-/.env*.local
+/.env*.production
 next-env.d.ts
 *.tsbuildinfo
 
